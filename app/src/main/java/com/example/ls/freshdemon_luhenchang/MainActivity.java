@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData() {
         mList = new ArrayList<>();
-        lastAdapter = new LastInforAdapter(this,mList);
+        lastAdapter = new LastInforAdapter(this, mList);
 
 
         for (int i = 0; i < 23; i++) {
@@ -54,23 +54,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        final TextView[] refrush_tv = new TextView[1];
-        final ImageView[] refrush_image = new ImageView[1];
-        final ImageView[] refrush_image1 = new ImageView[1];
+
         refreshLayout = (TwinklingRefreshLayout) findViewById(R.id.refreshLayout);
         mRecylerViwe = (RecyclerView) findViewById(R.id.activity_last_infor_rv);
         mRecylerViwe.setLayoutManager(new LinearLayoutManager(this));
         //第一个中自己新建类实现接口
 
 
-
-        refreshLayout.setHeaderView(new MyGoleView(this,0));
+        refreshLayout.setHeaderView(new MyGoleView(this, 0));
         //这里的1随便写不是0就可以了
-        refreshLayout.setHeaderView(new MyGoleView(this,1));
+        refreshLayout.setHeaderView(new MyGoleView(this, 1));
 
 
-       // 第二种这个地方用内部类的方式来实现，对于我们来说最好不要这样子吧，维护起来烦死了，而且代码太多，不能够复用。
-       /* IHeaderView iHeaderView = new IHeaderView() {
+        // 第二种这个地方用内部类的方式来实现，对于我们来说最好不要这样子吧，维护起来烦死了，而且代码太多，不能够复用。
+       /*
+
+        final TextView[] refrush_tv = new TextView[1];
+        final ImageView[] refrush_image = new ImageView[1];
+        final ImageView[] refrush_image1 = new ImageView[1];
+       IHeaderView iHeaderView = new IHeaderView() {
             private AnimationDrawable animationDrawable;
 
             @Override
@@ -106,9 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 animationDrawable.stop();
             }
         };
-*/
-
-        /*IBottomView ibootemview = new IBottomView() {
+           IBottomView ibootemview = new IBottomView() {
             private AnimationDrawable animationDrawable1;
 
             @Override
