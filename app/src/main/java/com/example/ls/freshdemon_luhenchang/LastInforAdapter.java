@@ -13,9 +13,8 @@ import java.util.List;
 
 
 /**
- * Created by ls on 2017/11/14.
+ * Created by 路很长~ on 2017/11/29.
  */
-
 public class LastInforAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private Context mContext;
     private List<String> mData;

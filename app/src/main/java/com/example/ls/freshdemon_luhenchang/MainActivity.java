@@ -1,24 +1,17 @@
 package com.example.ls.freshdemon_luhenchang;
-
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.view.Window;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import com.lcodecore.tkrefreshlayout.IBottomView;
-import com.lcodecore.tkrefreshlayout.IHeaderView;
 import com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Created by 路很长~ on 2017/11/29.
+ */
 public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecylerViwe;
     private LastInforAdapter lastAdapter;

@@ -13,7 +13,7 @@ import com.lcodecore.tkrefreshlayout.IBottomView;
 import com.lcodecore.tkrefreshlayout.IHeaderView;
 
 /**
- * Created by ls on 2017/11/29.
+ * Created by 路很长~ on 2017/11/29.
  */
 
 public class MyGoleView extends View implements IHeaderView, IBottomView {
